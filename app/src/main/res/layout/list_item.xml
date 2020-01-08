@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    xmlns:tools = "http://schemas.android.com/tools"
+    android:layout_height="match_parent">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:minHeight="@dimen/list_item_height"
+        android:id="@+id/list_item"
+        android:background="@color/tan_background">
+        <ImageView
+            android:id="@+id/visual_image"
+            android:layout_width="@dimen/list_item_height"
+            android:layout_height="@dimen/list_item_height"
+            android:src="@mipmap/ic_launcher"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_item_height"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/visual_image"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:id="@+id/text_container">
+            <TextView
+                android:id="@+id/igbo_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:gravity="bottom"
+                tools:text="Calimbo"/>
+
+            <TextView
+                android:id="@+id/english_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="top"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#FFFFFF"
+                tools:text="Anglais"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_launcher"/>
+        
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
